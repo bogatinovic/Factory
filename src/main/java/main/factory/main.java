@@ -24,6 +24,7 @@ public class main {
         Car lada = new Car();
         lada.model = "Lada Niva";
         lada.ccm = 1600;
+        lada.buildYear = 1970;
         
         System.out.println("Model automobila je " + lada.model);
     }
