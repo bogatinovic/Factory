@@ -20,6 +20,12 @@ public class main {
         auto2.buildYear = 2019;
         
         System.out.println("Model automobila je " + auto2.model);
+        
+        Car lada = new Car();
+        lada.model = "Lada Niva";
+        lada.ccm = 1600;
+        
+        System.out.println("Model automobila je " + lada.model);
     }
     
 }
