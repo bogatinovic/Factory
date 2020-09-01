@@ -6,6 +6,7 @@ public class main {
         System.out.println("Pocetak");
         
         Car audi8 = new Car();
+        audi8.printAttributes();
         
         audi8.setModel("Audi A8");
         audi8.setBuildYear(2003);
@@ -22,11 +23,15 @@ public class main {
         System.out.println("Model automobila je " + fiatPunto.getModel());
         fiatPunto.printAttributes();
         
-        Car lada = new Car();
-        lada.setModel("Lada");
-                
-        System.out.println("Model automobila je " + lada.getModel());
+        Car lada = new Car("Lada Niva", 1990, "green", 120, 50);
         lada.printAttributes();
+//      System.out.println("Model automobila je " + lada.getModel());
+        
+        Car opel = new Car("Opel", 2002, "blue", 200, 1300, 7, 150000);
+        opel.printAttributes();
+        opel.goToTravel(200);
+        opel.printAttributes();
+        
     }
     
 }
