@@ -28,8 +28,22 @@ public class main {
 //      System.out.println("Model automobila je " + lada.getModel());
         
         Car opel = new Car("Opel", 2002, "blue", 200, 1300, 7, 150000);
+        
+        //prvo putavanje
+        opel.setMaxFuel(40);
+        opel.setFuel(0);
+        opel.setConsumption(10);
+        
+        opel.fuelUp(29);
+        opel.fuelUp(21);
+        
+//        opel.printAttributes();
+//        opel.goToTravel(200);
+//        opel.printAttributes();
+        opel.goToTravel(300);
         opel.printAttributes();
-        opel.goToTravel(200);
+        
+        opel.goToTravel(50);
         opel.printAttributes();
         
     }
